@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 50px 100px;
+  margin-inline: minmax(10px, 20vw);
+}
+.logo {
+  height: 45px;
+  width: 150px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+ul li {
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #070f18;
+  margin-right: 52px;
+}
+.selected {
+  font-weight: 600;
+}
+.sign-in {
+  background: #f5f6fb;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 50px;
+  padding: 12px;
+  width: 150px;
+  cursor: pointer;
+}
+.intro {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 70px;
+  margin-inline: 120px 120px;
+}
+.text {
+  padding: 20px;
+  margin-right: 20px;
+}
+.text > * {
+  margin-bottom: 20px;
+}
+.text h1 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 83px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #575455;
+  padding-bottom: 30px;
+}
+.get-started {
+  margin-top: 50px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1f7cff;
+  padding: 20px 50px;
+  color: white;
+  border-radius: 50px;
+}
+.poster-girl-img {
+  position: relative;
+  margin-left: 50px;
+  padding-left: 50px;
+}
+.left {
+  position: absolute;
+  top: 135px;
+  right: 450px;
+}
+.right {
+  position: absolute;
+  top: 55px;
+  left: 370px;
+}
+.brands {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 160px;
+  margin-bottom: 130px;
+}
+.brands h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #070f18;
+}
+.brands div {
+  display: flex;
+  justify-content: space-between;
+}
+.brands img {
+  margin-left: 50px;
+  height: 30px;
+}
+.points {
+}
+.hero h6 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f75c4e;
+  margin-bottom: 6px;
+}
+.hero h2 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #575455;
+  margin-bottom: 70px;
+}
+.sub-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 92px 60px;
+  margin-inline: 50px;
+  margin-bottom: 130px;
+}
+.sub-hero span {
+  display: grid;
+  grid-template-areas: "img h4" "img p";
+  gap: 12px 24px;
+}
+.sub-hero img {
+  height: 60px;
+  width: 60px;
+  grid-area: img;
+}
+.sub-hero h4 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #070f18;
+  grid-area: h4;
+}
+.sub-hero p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #575455;
+  grid-area: p;
+}
+.end {
+  display: flex;
+  margin: 180px 125px;
+  justify-content: space-around;
+}
+.end div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 425px;
+}
+.end img {
+  width: 450px;
+  margin-left: 10px;
+}
+.end div h5 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f75c4e;
+  margin-bottom: 6px;
+}
+.end div h2 {
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.end div p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #575455;
+  margin-bottom: 30px;
+}
+.input {
+  position: relative;
+}
+#submit {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  padding-inline: 20px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+input {
+  height: 48px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  color: #575455;
+  background-color: #f5f6fb;
+}
+input::-moz-focus-inner {
+  border: none;
+}
+@media (max-width: 1000px) {
+  * {
+    margin-inline: 10px;
+  }
+  .poster-girl-img {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  section.intro {
+    text-align: center;
+    margin-inline: 10px;
+  }
+  .text {
+    width: 75%;
+  }
+  .brands {
+    flex-direction: column;
+    margin-inline: 10px;
+  }
+  .brands h3 {
+    text-align: center;
+  }
+  .brands div {
+    margin-block-start: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .brands div img {
+    margin-inline: 10px;
+    margin-block: 10px;
+  }
+  .sub-hero {
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 20px;
+    gap: 5px;
+  }
+  .end {
+    display: flex;
+    margin-inline: 20px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .end div {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .sub-hero {
+    grid-template-columns: 1fr;
+    margin-inline: 5px;
+    gap: 10px;
+  }
+  .sub-hero span img {
+    display: grid;
+    place-items: center;
+  }
+  .text,
+  section.intro {
+    padding: 0;
+    margin: 0;
+  }
+  .intro {
+    padding-bottom: 5px;
+  }
+  .brands {
+    margin-top: 25px;
+  }
+  .end * {
+    margin: 5px;
+    width: 90%;
+  }
+  .end img {
+    object-fit: cover;
+  }
+  .end #submit {
+    width: 125px;
+  }
+}
