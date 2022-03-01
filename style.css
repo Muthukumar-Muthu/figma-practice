@@ -365,7 +365,8 @@ input::-moz-focus-inner {
   .brands {
     margin-top: 25px;
   }
-  .end * {
+  .end *,
+  .end {
     margin: 5px;
     width: 90%;
   }
